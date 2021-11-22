@@ -73,8 +73,7 @@ if verbose:
 now = datetime.datetime.now()
 
 # Functions
-cmd = "/usr/bin/confluent"
-#cmd = "/Users/sduff/cli/bin/confluent"
+cmd = "/app/bin/confluent"
 def runcmd(cl,j=True):
     p = subprocess.run(cl, capture_output=True, text=True, timeout=60)
     if p.returncode != 0:
